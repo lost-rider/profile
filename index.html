@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  
   <nav id="desktop-nav">
     <div class="logo">Amisha Sinha</div>
     <div>
@@ -23,7 +24,7 @@
     </div>
   </nav>
   <nav id="hamburger-nav">
-    <div class="logo">Amisha Sinha</div>
+    <div class="logo">Amisha Sinha<br></div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
         <span></span>
@@ -45,7 +46,22 @@
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Amisha Sinha</h1>
-      <p class="section__text__p2">Web Developer</p>
+      <p class="section__text__p2"></p></div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var typeffect = new Typed(".section__text__p2", {
+            strings: ["Developer", "Designer", "Photographer"],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 80,
+            backDelay: 2500
+            
+          });
+        });
+      </script>
+     
+     <div class="section__text">
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/scv_final.pdf')">
           Download CV
@@ -74,7 +90,7 @@
           <div class="details-container">
             <img src="./assets/experience.png" alt="Experience icon" class="icon" />
             <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
+            <p>1+ years <br />Web Development</p>
           </div>
           <div class="details-container">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
@@ -88,7 +104,7 @@
             I am a third year undergraduate student at Indian Institute of Technology Kharagpur pursuing Bachelors
             degree in Electrical Engineering.
             I am a part time web developer and love to capture moments in my free time. If you are a music freak we have
-            a lot in common ;).
+            a lot in common ;>.
           </p>
         </div>
       </div>
@@ -290,6 +306,7 @@
 
   </footer>
   <script src="script.js"></script>
+
 </body>
 
 </html>

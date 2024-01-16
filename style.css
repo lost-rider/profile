@@ -6,9 +6,28 @@
   margin: 0;
   padding: 0;
 }
+.text-container{
+color: antiquewhite;
+
+}
 
 body {
+  color: white;
   font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.67; /* Adjust the opacity level (0 to 1) */
 }
 
 html {
@@ -16,7 +35,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: antiquewhite;
 }
 
 /* TRANSITION */
@@ -61,6 +80,9 @@ a:hover {
 .logo {
   font-size: 2rem;
 }
+.title{
+  color: black;
+}
 
 .logo:hover {
   cursor: default;
@@ -97,7 +119,8 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: black;
+  color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -109,7 +132,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -180,6 +203,7 @@ section {
   align-self: center;
   text-align: center;
 }
+
 
 .section__text p {
   font-weight: 600;
@@ -285,6 +309,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+
 }
 
 .arrow {
@@ -296,7 +321,8 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  color: white;
+  background: black;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -321,7 +347,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color:antiquewhite;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
