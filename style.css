@@ -361,7 +361,7 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: left;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -377,6 +377,7 @@ article {
 
 article .icon {
   cursor: default;
+  text-align: center;
 }
 
 /* PROJECTS SECTION */
