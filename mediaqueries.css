@@ -8,6 +8,7 @@
   }
   #contact,
   #projects {
+    padding-top: 10%;
     height: fit-content;
   }
 }
@@ -22,6 +23,7 @@
   #experience,
   .experience-details-container {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   #profile,
   .section-container {
@@ -90,6 +92,10 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+  }
+  .section__text__p1 {
+    padding-top: 10cm;
+    
   }
   .section__text__p2 {
     font-size: 1.25rem;
